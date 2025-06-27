@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pet Age Calculator</h1>
+      <div class="calculator">
+        <div class="input-group">
+          <label for="petAge">Pet's Age (in years):</label>
+          <input
+            type="number"
+            id="petAge"
+            min="0"
+            step="0.1"
+            placeholder="Enter age"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="petType">Pet Type:</label>
+          <select id="petType">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="rabbit">Rabbit</option>
+          </select>
+        </div>
+
+
+        <div class="piecewise-explanation">
+          <p>
+            <strong>How it works:</strong> This calculator uses a 'piecewise
+            method' that assumes rapid aging in early years and slower aging
+            during later life stages.
+          </p>
+        </div>
+
+        <div id="result" class="result"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 20px; /* Added horizontal margins */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  font-weight: 300;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: 600;
+  color: #555;
+  font-size: 0.95em;
+}
+
+input,
+select {
+  padding: 12px 15px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 40px;
+  background: white
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="%23999" stroke-width="1.5" fill="none"/></svg>')
+    no-repeat right 12px center;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.result {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: 600;
+  min-height: 60px;
+  align-items: center;
+}
+
+.result.show {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #333;
+  border: 2px solid #e1e5e9;
+}
+
+option:disabled {
+  color: #999;
+}
+
+/* Additional mobile responsiveness */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 25px; /* Reduce padding on small screens */
+    margin: 0 15px; /* Smaller margins on very small screens */
+  }
+
+  h1 {
+    font-size: 1.8em; /* Slightly smaller title on mobile */
+  }
+}
