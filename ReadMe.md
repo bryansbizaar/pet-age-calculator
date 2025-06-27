@@ -40,7 +40,7 @@ The calculator uses a piecewise aging method that accounts for the fact that pet
 
 ## Live Demo
 
-[View Live Demo](#) <!-- Add your GitHub Pages URL here -->
+[View Live Demo](https://bryansbizaar.github.io/pet-age-calculator/)
 
 ## Technologies Used
 
